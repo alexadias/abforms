@@ -7,6 +7,8 @@
   <body>
     <h1>WORK ORDER</h1>
     <br>
+    <h2>AIRCRAFT INFORMATION</h2>
+    <br>
     <form action="data.php" method="post">
       <div>
         <labeL>Customer WO number</label>
@@ -25,14 +27,83 @@
           <option>BOMBARDIER</option>
           <option>HAWKER</option>
           <option>GULFSTREAM</option>
+          <option>OTHER</option>
         </select>
       </div>
       <br>
       <div>
-
-
-      </div>
-
+<label>MODEL</label>
+<input type="text" name="MODEL">
+</div>
+<br>
+<div>
+  <label>S/N:</label>
+  <input type="text" name="S/N">
+</div>
+<br>
+<div>
+  <label>AIRCRAFT TOTAL TIME:</label>
+  <input type="NUMBER" name="AIRCRAFT TOTAL TIME">
+</div>
+<br>
+<div>
+  <label>ENGINE TOTAL TIME</label>
+  <label>LEFT</label>
+  <input type="NUMBER" name="ENGINE TOTAL TIME LEFT">
+  <label>RIGHT</label>
+  <input type="NUMBER" name="ENGINE TOTAL TIME RIGHT">
+</div>
+<br>
+<div>
+  <label>ENGINE TOTAL CYCLES</label>
+  <label>LEFT</label>
+  <input type="NUMBER" name="ENGINE TOTAL CYCLES LEFT">
+  <label>RIGHT</label>
+  <input type="NUMBER" name="ENGINE TOTAL CYCLES RIGHT">
+</div>
+<br>
+<h2>CUSTOMER INFORMATION</h2>
+<br>
+<div>
+  <label>NAME/ COMAPANY</label>
+  <input type="text" name="NAME/ COMAPANY">
+</div>
+<br>
+<div>
+  <labeL>BILLING ADDRESS</label>
+  <input type="text" name="BILLING ADDRESS">
+</div>
+<br>
+<div>
+  <labeL>PHONE:</label>
+  <input type="PHONE NUMBER" name="PHONE">
+</div>
+<br>
+<div>
+  <labeL>EMAIL</label>
+  <input type="email" name="EMAIL">
+</div>
+<br>
+<div>
+  <labeL>AIRCRAFT OPERATOR FAR PART</label>
+  <select name="AIRCRAFT OPERATOR PART">
+    <option value="PART 91">PART 91</option>
+    <option value="PART 121">PART 121</option>
+    <option value="PART 135">PART 135</option>
+  </select>
+</div>
+<br>
+<div>
+  <br>
+  <h2>RECORDING</h2>
+  <br>
+  <labeL>DISCREPANCY SHEETS</label>
+  <select name="DISCREPANCY SHEETS">
+    <option value="AIR BEAR FORMS">AIR BEAR FORMS</option>
+    <option value="CUSTOMER FORMS">CUSTOMER FORMS</option>
+  </select>
+</div>
+<br>
 
     </form>
   </body>
